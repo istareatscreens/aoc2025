@@ -1,0 +1,11 @@
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+**/**/.vscode
+
+/day*/day[0-9]*
+!day*.py
+/day*/input/input*
+/day*/input/test*
