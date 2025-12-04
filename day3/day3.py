@@ -11,7 +11,7 @@ def findMaxBatteries(batteryList: list, lBound, uBound)-> dict:
     return largestBattery;
 
 
-def day2():
+def day3():
     solution_p1 = 0
 
     batteryBanks = []
@@ -63,4 +63,4 @@ def day2():
     print("🎄 P2 Solution: " + str(solution_p2))
 
 if __name__ == '__main__':
-    day2()
+    day3()

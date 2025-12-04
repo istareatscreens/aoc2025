@@ -1,9 +1,12 @@
+**/__pycache__
+
 *.swp
 *.swo
 *.bak
 *.tmp
 *.log
 **/**/.vscode
+.env
 
 /day*/day[0-9]*
 !day*.py

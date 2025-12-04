@@ -5,7 +5,6 @@ def day1():
         for line in f:
             line = line.rstrip('\n');
             rotation = int(line[1:])
-            print(line, line[0], rotation)            
 
             match line[0]:
                 case 'L':

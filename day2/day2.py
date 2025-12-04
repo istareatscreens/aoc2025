@@ -15,7 +15,6 @@ def checkForSymmetry(num: int) -> bool:
     divisors.reverse()
 
     # Check Symmetry using divisors
-    #print("num : "+ str(num) +" divisors: " + str(divisors))
     for divider in divisors:
         num_string = str(num)
         prev = num_string[:divider]
@@ -29,7 +28,6 @@ def checkForSymmetry(num: int) -> bool:
                 break;
             prev = cur
         if symmetric:
-            print(str(num) + " " + str(divider))
             return True
 
     
@@ -62,7 +60,6 @@ def day2():
     for rangeBounds in id_ranges:
         for num in range(int(rangeBounds[0]),(int(rangeBounds[1]) + 1)):
             if checkForSymmetry(num):
-                # print("Num: " + str(num) + " + Sol: " + str(solution_p2) + " = " + str(solution_p2 + num))
                 solution_p2 += num
 
     print("P2 Solution: " + str(solution_p2))
