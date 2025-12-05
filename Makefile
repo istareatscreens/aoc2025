@@ -1,4 +1,4 @@
-.PHONY: day1 day2 day3 day4
+.PHONY: *
 
 day1:
 	cd day1 && python day1.py
@@ -11,3 +11,6 @@ day3:
 
 day4: 
 	cd ./day4 && python day4.py 
+	
+day5: 
+	cd ./day5 && python solution.py 

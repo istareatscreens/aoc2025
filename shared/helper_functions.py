@@ -13,6 +13,9 @@ def readInputLines(path: str, test: bool) -> list|str:
             input_lines.append(line.rstrip('\n'))
     return input_lines if len(input_lines) > 1 else input_lines[0]
 
+def split2dArrayString(array: list) -> list:
+    return list(map(lambda x: list(x), array))
+
 def safeAccessIndex(indices: list, array: list):
     result = array
     try:
