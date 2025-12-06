@@ -26,7 +26,6 @@ def safeAccessIndex(indices: list, array: list):
     except:
         return ACCESS_ERROR
     return result
-    
 
 def printSolution1(result) -> None:
     print("🎄 P1 Solution: " + str(result))

@@ -14,3 +14,6 @@ day4:
 	
 day5: 
 	cd ./day5 && python solution.py 
+
+day6: 
+	cd ./day6 && python solution.py 
