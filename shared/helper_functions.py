@@ -2,7 +2,7 @@ import os
 
 ACCESS_ERROR = "ACCESS_ERROR"
 
-def readInputLines(path: str, test: bool) -> list|str:
+def readInputLines(path: str, test: bool|int) -> list|str:
     if test:
         print("TEST MODE ON")
     input_lines = []
@@ -16,6 +16,9 @@ def readInputLines(path: str, test: bool) -> list|str:
 def split2dArrayString(array: list) -> list:
     return list(map(lambda x: list(x), array))
 
+def withinRange(value: int, range: list) -> bool:
+    return int(range[1]) >= int(value) and int(range[0]) <= int(value)
+
 def safeAccessIndex(indices: list, array: list):
     result = array
     try:
@@ -28,7 +31,7 @@ def safeAccessIndex(indices: list, array: list):
     return result
 
 def printSolution1(result) -> None:
-    print("🎄 P1 Solution: " + str(result))
+    print("🎄 P1 Solution: " + str(result) + " 🎄")
 
 def printSolution2(result) -> None:
-    print("🎄 P2 Solution: " + str(result))
+    print("🎄 P2 Solution: " + str(result) + " 🎄")
