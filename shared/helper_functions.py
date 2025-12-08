@@ -16,6 +16,10 @@ def readInputLines(path: str, test: bool|int) -> list|str:
 def split2dArrayString(array: list) -> list:
     return list(map(lambda x: list(x), array))
 
+def print2d(lists: list) -> None:
+    for arr in lists:
+        print(arr)
+
 def withinRange(value: int, range: list) -> bool:
     return int(range[1]) >= int(value) and int(range[0]) <= int(value)
 

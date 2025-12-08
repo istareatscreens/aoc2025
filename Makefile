@@ -1,5 +1,11 @@
 .PHONY: *
 
+new:
+	cp -r template day$(day) && \
+	echo "" >> Makefile && \
+	echo "day$(day):" >> Makefile && \
+	printf "\tcd ./day$(day) && python solution.py $$\{test}\n" | sed 's/\\{/{/g' >> Makefile
+
 day1:
 	cd day1 && python day1.py
 
@@ -20,3 +26,6 @@ day6:
 
 day7: 
 	cd ./day7 && python solution.py 
+
+day8:
+	cd ./day8 && python solution.py ${test}
